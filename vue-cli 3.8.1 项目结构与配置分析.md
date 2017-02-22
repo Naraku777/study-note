@@ -64,7 +64,7 @@ vue-cli 2.8.1 已经支持 webpack 2.2
 参考：[vue-cli#2.0 webpack 配置分析](https://gold.xitu.io/post/584e48b2ac502e006c74a120) 
 作者：滴滴公共前端团队 - 王宏宇
 
-以下是大部分引用和个人的一些补充
+以下是个人的一些补充与见解
 
 ### dev-server.js
 
@@ -194,30 +194,25 @@ var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 
-// 将 Hol-reload 相对路径添加到 webpack.base.conf 的 对应 entry 前
+// add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
   baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name])
 })
 
-// 将我们 webpack.dev.conf.js 的配置和 webpack.base.conf.js 的配置合并
 module.exports = merge(baseWebpackConfig, {
   module: {
-    // 使用 styleLoaders
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap })
   },
-  // 配置开发工具
+  // cheap-module-eval-source-map is faster for development
   devtool: '#cheap-module-eval-source-map',
   plugins: [
-    // definePlugin 接收字符串插入到代码当中, 所以你需要的话可以写上 JS 的字符串
-    // 编译时配置全局变量
     new webpack.DefinePlugin({
       'process.env': config.dev.env
     }),
-    // HotModule 插件在页面进行变更的时候只会重绘对应的页面模块，不会重绘整个 html 文件
+    // https://github.com/glenjamin/webpack-hot-middleware#installation--usage
     new webpack.HotModuleReplacementPlugin(),
-    // 使用了 NoErrorsPlugin 后页面中的报错不会阻塞，但是会在编译结束后报错
     new webpack.NoEmitOnErrorsPlugin(),
-    // 将 index.html 作为入口，注入 html 代码后生成 index.html文件
+    // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
@@ -451,21 +446,15 @@ var webpack = require('webpack')
 var config = require('../config')
 var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
-// 一个复制文件目录的插件
 var CopyWebpackPlugin = require('copy-webpack-plugin')
-// 一个可以插入 html 并且创建新的 .html 文件的插件
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-// 一个 webpack 扩展，可以提取一些代码并且将它们和文件分离开
-// 如果我们想将 webpack 打包成一个文件 css js 分离开，那我们需要这个插件
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
 var env = config.build.env
 
-// 合并 webpack 配置文件
 var webpackConfig = merge(baseWebpackConfig, {
   module: {
-    // 使用的 loader
     rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,
       extract: true
@@ -473,12 +462,8 @@ var webpackConfig = merge(baseWebpackConfig, {
   },
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
-    // 编译输出目录
     path: config.build.assetsRoot,
-    // 编译输出文件名
-    // 我们可以在 hash 后加 :6 决定使用几位 hash 值
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    // 没有指定输出名的文件输出的文件名
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [
@@ -486,14 +471,13 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
-    // 压缩代码的插件
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
       },
       sourceMap: true
     }),
-    // 将 css 文件分离出来
+    // extract css into its own file
     new ExtractTextPlugin({
       filename: utils.assetsPath('css/[name].[contenthash].css')
     }),
@@ -503,13 +487,10 @@ var webpackConfig = merge(baseWebpackConfig, {
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
-    // 输入输出的 .html 文件
     new HtmlWebpackPlugin({
       filename: config.build.index,
       template: 'index.html',
-      // 是否注入 html
       inject: true,
-      // 压缩的方式
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -521,7 +502,6 @@ var webpackConfig = merge(baseWebpackConfig, {
       chunksSortMode: 'dependency'
     }),
     // split vendor js into its own file
-    // 没有指定输出文件名的文件输出的静态文件名
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       minChunks: function (module, count) {
@@ -537,7 +517,6 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     // extract webpack runtime and module manifest to its own file in order to
     // prevent vendor hash from being updated whenever app bundle is updated
-    // 没有指定输出文件名的文件输出的静态文件名
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       chunks: ['vendor']
@@ -553,14 +532,10 @@ var webpackConfig = merge(baseWebpackConfig, {
   ]
 })
 
-// 开启 gzip 的情况下使用下方的配置
 if (config.build.productionGzip) {
-  // 加载 compression-webpack-plugin 插件
   var CompressionWebpackPlugin = require('compression-webpack-plugin')
-  
-  // 向webpackconfig.plugins中加入下方的插件
+
   webpackConfig.plugins.push(
-    // 使用 compression-webpack-plugin 插件进行压缩
     new CompressionWebpackPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
@@ -582,46 +557,3 @@ if (config.build.bundleAnalyzerReport) {
 
 module.exports = webpackConfig
 ```
-
-
-以上，查看 webpack(v2.2) 文档或了解插件接口可以移步：
-
-- [api](https://webpack.js.org/api/)
-- [configuration](https://webpack.js.org/configuration/)
-- [plugins](https://webpack.js.org/plugins/)
-- [loaders](https://webpack.js.org/loaders/)
-
-## 其他
-
-### .babelrc
-
-```
-{
-  // 预设转码规则
-  "presets": [
-    ["es2015", { "modules": false }],
-    "stage-2"
-  ],
-  // 转码插件
-  "plugins": ["transform-runtime"],
-  "comments": false,
-  // 针对特定环境变量进行不同的操作
-  "env": {
-    "test": {
-      "plugins": [ "istanbul" ]
-    }
-  }
-}
-
-```
-
-[Babel 入门教程](http://www.ruanyifeng.com/blog/2016/01/babel.html) 作者：阮一峰
-
-### .editorconfig
-
-项目编码规范文件
-
-
-以上。
-
-
