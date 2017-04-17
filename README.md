@@ -13,3 +13,7 @@
 ## RESTAPI
 
 - [编写 Node.js Rest API 的 10 个最佳实践](http://www.admin10000.com/document/12534.html)
+
+
+## Redux
+- [Redux 中文文档](http://cn.redux.js.org/index.html)
