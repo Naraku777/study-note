@@ -49,7 +49,7 @@ vue-cli 2.8.1 已经支持 webpack 2.2
 
 `scripts` 字段用于运行指定脚本命令。
 
-```
+```js
 "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js"
@@ -71,7 +71,7 @@ vue-cli 2.8.1 已经支持 webpack 2.2
 首先是 `dev` 环境
 
 
-```
+```js
 // 检查 Node 和 npm 版本
 // 引入 check-versions 模块并自执行
 require('./check-versions')()
@@ -181,7 +181,7 @@ module.exports = app.listen(port, function (err) {
 
 ### webpack.dev.conf.js
 
-```
+```js
 var utils = require('./utils')
 var webpack = require('webpack')
 var config = require('../config')
@@ -232,7 +232,7 @@ module.exports = merge(baseWebpackConfig, {
 
 webpack.dev.conf.js 中又引入了 webpack.base.conf.js，先来看 base 是怎样的
 
-```
+```js
 var path = require('path')
 // 引入小工具
 var utils = require('./utils')
@@ -318,7 +318,7 @@ module.exports = {
 
 index.js 文件中有 dev 和 prod 两种环境的配置参数
 
-```
+```js
 ...
 
 module.exports = {
@@ -366,7 +366,7 @@ module.exports = {
 
 [文档地址](http://vue-loader.vuejs.org/en/)
 
-```
+```js
 var utils = require('./utils')
 var config = require('../config')
 var isProduction = process.env.NODE_ENV === 'production'
@@ -395,7 +395,7 @@ module.exports = {
 
 ### build.js
 
-```
+```js
 require('./check-versions')()
 
 process.env.NODE_ENV = 'production'
@@ -444,7 +444,7 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
 
 ### webpack.prod.conf.js
 
-```
+```js
 var path = require('path')
 var utils = require('./utils')
 var webpack = require('webpack')
@@ -595,7 +595,7 @@ module.exports = webpackConfig
 
 ### .babelrc
 
-```
+```js
 {
   // 预设转码规则
   "presets": [
