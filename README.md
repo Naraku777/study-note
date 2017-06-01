@@ -2,6 +2,9 @@
 学习中的一些记录 以及 一些资料文章
 
 
+## Javascript
+
+- [Javascript 深入系列](https://juejin.im/post/59278e312f301e006c2e1510) | 作者：[mqyqingfeng](https://github.com/mqyqingfeng/Blog)
 
 
 ## Vue.js
