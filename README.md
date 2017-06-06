@@ -14,8 +14,9 @@
 - [手把手教你写 Vue UI 组件库](https://github.com/Musiky/Article/blob/master/blog/vue-plugin.md) | 作者：Musiky
 
 
-### RESTAPI
+### RESTful API
 
+- [RESTful API 编写指南](https://blog.igevin.info/posts/restful-api-get-started-to-write) | 作者：Gevin 
 - [编写 Node.js Rest API 的 10 个最佳实践](http://www.admin10000.com/document/12534.html) | 作者：王仕军
 
 
