@@ -20,6 +20,8 @@
 - [RESTful API 编写指南](https://blog.igevin.info/posts/restful-api-get-started-to-write) | 作者：Gevin 
 - [编写 Node.js Rest API 的 10 个最佳实践](http://www.admin10000.com/document/12534.html) | 作者：王仕军
 
+### Node.js
+- [Node.js+MongoDB对于RestfulApi中用户token认证实践](https://segmentfault.com/a/1190000008629632) | 作者：straydog
 
 ### Redux
 - [Redux 中文文档](http://cn.redux.js.org/index.html)
