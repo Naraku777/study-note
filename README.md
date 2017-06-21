@@ -22,6 +22,7 @@
 
 ### Node.js
 - [Node.js+MongoDB对于RestfulApi中用户token认证实践](https://segmentfault.com/a/1190000008629632) | 作者：straydog
+- [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html) | 作者：阮一峰
 
 ### Redux
 - [Redux 中文文档](http://cn.redux.js.org/index.html)
