@@ -1,6 +1,10 @@
 # study-note
-学习中的一些记录 以及 一些资料文章
 
+> 学习中的一些记录 以及 一些资料文章
+
+### CSS
+
+- [使用 CSS 处理文本过长和意外超出的方法和技巧](http://svgtrick.com/tricks/06af9fabf7e2ecfad24856416b024968) | 作者：Janily
 
 ### Javascript
 
