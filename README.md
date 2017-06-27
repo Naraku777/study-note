@@ -39,4 +39,4 @@
 
 
 ### Swift
--[The Swift Programming Language 中文版](http://wiki.jikexueyuan.com/project/swift/chapter1/02_a_swift_tour.html) | 来源：极客学院
+- [The Swift Programming Language 中文版](http://wiki.jikexueyuan.com/project/swift/chapter1/02_a_swift_tour.html) | 来源：极客学院
