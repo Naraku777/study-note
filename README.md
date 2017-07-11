@@ -49,7 +49,7 @@
 
 
 ### MacOS
-- [你可能不知道的 Mac 技巧 - macOS 的窗口、标签与工作区](https://zhuanlan.zhihu.com/p/25746402)
+- [你可能不知道的 Mac 技巧 - macOS 的窗口、标签与工作区](https://zhuanlan.zhihu.com/p/25746402) | 作者：柳星
 
 
 
