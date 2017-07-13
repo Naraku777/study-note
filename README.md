@@ -42,6 +42,7 @@
 ### 杂
 - [一文读懂 HTTP/2 特性](https://zhuanlan.zhihu.com/p/26559480) | 作者：又拍云
 - [Rem 等比适配始末](https://juejin.im/post/5939444d5c497d006b65db53) | 作者：小虫巨蟹
+- [7种常见的浏览器兼容性问题大汇总](http://www.qdfuns.com/notes/18090/961a36d50f2efa676061b5a02c374f75.html) | 作者：宇智波卡卡西
 
 
 ### Swift
