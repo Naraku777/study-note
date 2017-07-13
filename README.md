@@ -38,6 +38,9 @@
 - [Redux 中文文档](http://cn.redux.js.org/index.html)
 - [我们为什么要用 redux-thunk](http://www.tuicool.com/articles/ZviErea) | 作者：卜赫
 
+### 设计模式
+- [饿了么的 PWA 升级实践](https://zhuanlan.zhihu.com/p/27853228) | 作者：黄玄
+
 
 ### 杂
 - [一文读懂 HTTP/2 特性](https://zhuanlan.zhihu.com/p/26559480) | 作者：又拍云
