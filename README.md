@@ -24,6 +24,10 @@
 - [Vue.js——使用$.ajax和vue-resource实现OAuth的注册、登录、注销和API调用](http://www.cnblogs.com/keepfool/p/5665953.html) | 作者：keepfool
 - [手把手教你写 Vue UI 组件库](https://github.com/Musiky/Article/blob/master/blog/vue-plugin.md) | 作者：Musiky
 
+### React
+
+- (Immutable 详解及 React 中实践)[https://github.com/camsong/blog/issues/3]
+
 
 ### RESTful API
 - [RESTful 架构风格概述](https://blog.igevin.info/posts/restful-architecture-in-general/) | 作者：Gevin 
