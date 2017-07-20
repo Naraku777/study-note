@@ -27,6 +27,7 @@
 ### React
 
 - [Immutable 详解及 React 中实践](https://github.com/camsong/blog/issues/3)
+- [记录一次利用 Timeline/Performance 工具进行 React 性能优化的真实案例](http://www.jianshu.com/p/9b0e9ef0a607) | 作者：波同学
 
 
 ### RESTful API
