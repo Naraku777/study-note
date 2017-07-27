@@ -16,6 +16,7 @@
 
 - [Javascript 深入系列](https://juejin.im/post/59278e312f301e006c2e1510) | 作者：[mqyqingfeng](https://github.com/mqyqingfeng/Blog)
 - [JavaScript ES2015 中对象继承的模式](http://www.css88.com/archives/7395) | 作者：愚人码头
+- [八段代码彻底掌握 Promise](https://juejin.im/post/597724c26fb9a06bb75260e8) | 作者： xuchaobei
 
 
 ### Vue.js
