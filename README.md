@@ -6,6 +6,7 @@
 ## 工具
 
 - [Regexper](https://regexper.com/) | 正则表达式测试验证分析
+- [一些能大幅提高你工作效率的Chrome插件](https://juejin.im/post/597aebc05188253e043870be) | 作者：ziwenxie
 
 
 ### CSS
