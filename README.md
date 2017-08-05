@@ -12,6 +12,7 @@
 ### CSS
 
 - [使用 CSS 处理文本过长和意外超出的方法和技巧](http://svgtrick.com/tricks/06af9fabf7e2ecfad24856416b024968) | 作者：Janily
+- [实用的60个CSS代码片](http://blog.poetries.top/2016/08/13/%E5%AE%9E%E7%94%A8%E7%9A%8460%E4%B8%AACSS%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/) | 作者：Poetry
 
 ### Javascript
 
