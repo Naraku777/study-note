@@ -43,6 +43,11 @@
 - [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html) | 作者：阮一峰
 - [Node.js v8.x 新特性 Async Hook 简介](https://zhuanlan.zhihu.com/p/27394440) | 作者：lellansin
 
+
+### 数据库
+- [解释一下关系数据库的第一第二第三范式？](https://www.zhihu.com/question/24696366) | 作者：刘慰
+
+
 ### Redux
 - [Redux 中文文档](http://cn.redux.js.org/index.html)
 - [我们为什么要用 redux-thunk](http://www.tuicool.com/articles/ZviErea) | 作者：卜赫
