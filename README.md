@@ -46,6 +46,7 @@
 
 ### 数据库
 - [解释一下关系数据库的第一第二第三范式？](https://www.zhihu.com/question/24696366) | 作者：刘慰
+- [MongoDB数据库设计中6条重要的经验法则，part 1（每日一译：2014-07-23）](http://www.jianshu.com/p/bb0caddff60a) | 作/译者：brightwang
 
 
 ### Redux
