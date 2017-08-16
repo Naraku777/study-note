@@ -62,6 +62,7 @@
 - [一文读懂 HTTP/2 特性](https://zhuanlan.zhihu.com/p/26559480) | 作者：又拍云
 - [Rem 等比适配始末](https://juejin.im/post/5939444d5c497d006b65db53) | 作者：小虫巨蟹
 - [7种常见的浏览器兼容性问题大汇总](http://www.qdfuns.com/notes/18090/961a36d50f2efa676061b5a02c374f75.html) | 作者：宇智波卡卡西
+- [从软件工程角度看大前端技术栈](https://mp.weixin.qq.com/s?__biz=MzIwNjEwNTQ4Mw==&mid=2651577419&idx=1&sn=a72a53ea3fbc973feff6d5d70bf2a38a&chksm=8cd9c2afbbae4bb9753a68533d76642cefddce419dc82bdc3e13ce2d941e5d1d95b492825b64) | 作者：韩亦乐
 
 
 ### Swift
