@@ -2,6 +2,9 @@
 
 > 学习中的一些记录 以及 一些资料文章
 
+### 一些好看的编程字体
+
+`Monaco`, `Consolas`, `Source Code Pro`, `DejaVu Sans Mono`
 
 ## 工具
 
