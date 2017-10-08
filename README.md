@@ -47,7 +47,8 @@
 - [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html) | 作者：阮一峰
 - [Node.js v8.x 新特性 Async Hook 简介](https://zhuanlan.zhihu.com/p/27394440) | 作者：lellansin
 - [讲真，别再使用JWT了](http://insights.thoughtworkers.org/do-not-use-jwt-anymore/) | 作者：周宇刚
-- [node.js 邮箱注册，激活，登陆相关案例](https://juejin.im/post/59cdbd20f265da06434baa09)
+- [node.js 邮箱注册，激活，登陆相关案例](https://juejin.im/post/59cdbd20f265da06434baa09) | 作者：请叫我峰仔仔
+- [教你从零开始搭建一款前端脚手架工具](https://segmentfault.com/a/1190000006190814) | 作者：jrainlau
 
 
 ### 数据库
